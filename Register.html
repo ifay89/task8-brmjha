@@ -19,7 +19,7 @@
         </header>
 
         <main>
-            <form action="" method="GET">
+            <form action="" method="GET" id="register-form">
                 <div>
                     <label for="username">Username</label>
                     <input type="text" name="Username" id="username" placeholder="username">
@@ -31,22 +31,24 @@
                     <span id="password-input-message">Your hard to guess password</span>
                 </div>
                 <div>
-                    <label for="confirm-password">Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password" >
+                    <label for="confirm-password">Confirm Password</label>
+                    <input oninput="ckeck()" type="password" name="confirm-password" id="confirm-password" >
                     <span id="confirm-password-input-message">Your hard to guess password</span>
                 </div>
                 <div>
-                    <label for="email">Password</label>
+                    <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" >
                     <span id="email-input-message">You address email to contact</span>
                 </div>
                 <div>
                     <button id="register">Register</button>
-                    <button id="login" type="submit">Login</button>
+                    <button id="login" type="submit"><a href="login.html">Login</a></button>
                 </div>
             </form>
         </main>
     </div>
     
+    <script src="validate-input.js"></script>
+
 </body>
 </html>

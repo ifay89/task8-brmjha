@@ -18,25 +18,27 @@
             </div>
         </header>
 
-        <main>
-            <form action="" method="GET">
+        <main id="form-container">
+            <form action="" method="GET" id="login-form">
                 <div>
                     <label for="username">Username</label>
-                    <input type="text" name="Username" id="username" placeholder="username">
+                    <input type="text" name="Username" id="username" required placeholder="username">
                     <span id="username-input-message">Your unique user name to app</span>
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="*****">
+                    <input type="password" name="password" id="password" required placeholder="*****">
                     <span id="password-input-message">Your strong password</span>
                 </div>
                 <div>
                     <button id="login" type="submit">Login</button>
-                    <button id="register">Register</button>
+                    <button id="register"> <a href="Register.html">Register</a></button>
                 </div>
             </form>
         </main>
     </div>
     
+    <script src="validate-input.js"></script>
+
 </body>
 </html>

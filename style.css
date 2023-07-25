@@ -12,6 +12,11 @@ body{
     background-color: aliceblue;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 .login-container{
     max-width: 404px;
 }
